@@ -10,7 +10,7 @@
 </head>
 <body class="bg-gray-100 font-roboto">
     <!-- Navbar Start -->
-    @include('layouts.navbar')
+    @include('layouts.navbar-login')
     <!-- Navbar End -->
 
     <div class="bg-white">

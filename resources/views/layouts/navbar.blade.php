@@ -7,7 +7,7 @@
             <li><a href="{{ url('landing') }}" class="hover:text-indigo-600">Home</a></li>
             <li><a href="{{ url('explore') }}" class="hover:text-indigo-600">Explore</a></li>
             <li><a href="{{ url('artists') }}" class="hover:text-indigo-600">Artist</a></li>
-            <li><a href="#art-gallery" class="hover:text-indigo-600">Art Gallery</a></li>
+            <li><a href="{{ url('art-gallery') }}" class="hover:text-indigo-600">Art Gallery</a></li>
         </ul>
         <div>
             <a href="{{ url('login') }}" class="mr-4 text-gray-700 hover:text-indigo-600">Sign In</a>

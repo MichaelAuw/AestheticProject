@@ -117,7 +117,7 @@
                 <button
                     class="flex items-center justify-center space-x-2 text-gray-500 hover:text-indigo-500 transition-all btn"
                     @click="alert('Item added to cart!')">
-                    <i class="fas fa-shopping-cart"></i>
+                    <img src="/images/shopping-cart.svg" alt="Shopping Cart" class="w-5 h-5">
                     <span>Add to Cart</span>
                 </button>
 

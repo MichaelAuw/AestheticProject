@@ -2,7 +2,7 @@
     use Illuminate\Support\Str;
 @endphp
 
-@extends('layouts.template')
+@extends('layouts.app')
 
 @section('title', 'Artist List')
 
@@ -120,7 +120,7 @@
     <div class="container mx-auto px-6">
       <!-- Job Count and Filters -->
       <div class="flex justify-between items-center mb-6">
-          <h2 class="text-3xl font-bold text-gray-800">244 Artists</h2>
+          <h2 class="text-2xl font-bold text-gray-800">244 Artists</h2>
           <div class="flex items-center space-x-4">
               <div class="relative">
                   <select class="appearance-none pl-4 pr-10 py-2 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500" id="locationFilter">

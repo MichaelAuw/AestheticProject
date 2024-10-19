@@ -6,6 +6,8 @@
     <title>Explore - Aesthetic</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 font-roboto text-gray-700">
 
@@ -27,27 +29,32 @@
 <!-- Hero Section End -->
 
 <!-- Content Section with white background -->
-<div class="bg-white py-12">
-    <!-- Filter and Sort Area Start -->
-    <div class="container mx-auto px-6 mt-8 flex justify-between items-center">
-        <span class="text-lg font-semibold">10,000+ Assets</span>
-        <div class="flex space-x-4">
-            <select id="categoryFilter" class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                <option value="all">All</option>
-                <option value="poster">Poster Design</option>
-                <option value="logo">Logo Design</option>
-                <option value="3d-art">3D Art</option>
-                <option value="animation">Animation</option>
-                <option value="commission">Commission</option>
-            </select>
-            <select class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                <option>Sort by likes</option>
-                <option>Most Recent</option>
-                <option>Trending</option>
-            </select>
-        </div>
-    </div>
-    <!-- Filter and Sort Area End -->
+<div class="bg-white py-10">
+    <div class="container mx-auto px-6">
+      <!-- Job Count and Filters -->
+      <div class="flex justify-between items-center mb-6">
+          <h2 class="text-2xl font-bold text-gray-800">10,000+ Assets</h2>
+          <div class="flex items-center space-x-4">
+              <div class="relative">
+                  <select class="appearance-none pl-4 pr-10 py-2 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500" id="locationFilter">
+                      <option value="sort-by-likes">Sort by Likes</option>
+                      <option value="most-recent">Most Recent</option>
+                      <option value="trending">Trending</option>
+                  </select>
+                  <i class="fas fa-chevron-down absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+              </div>
+              <div class="relative">
+                  <select id="filterField" class="appearance-none pl-4 pr-10 py-2 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500" onchange="filterArtists()">
+                      <option value="poster">Poster Design</option>
+                      <option value="logo">Logo Design</option>
+                      <option value="3d-art">3D Art</option>
+                      <option value="animation">Animation</option>
+                      <option value="comission">Commision</option>
+                  </select>
+                  <i class="fas fa-chevron-down absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+              </div>
+          </div>
+      </div>
 
     <!-- Art Gallery Grid Start -->
     <section id="art-gallery" class="py-8">

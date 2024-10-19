@@ -21,10 +21,10 @@
 
     <h2 class="mt-8 text-xl font-bold">Skills</h2>
     <div class="flex flex-wrap gap-2 mt-4">
-      <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full border border-green-800">Graphic Design</span>
-      <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full border border-blue-800">Adobe Illustration</span>
-      <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full border border-purple-800">Adobe Photoshop</span>
-      <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full border border-pink-800">Logo Design</span>
+      <span class="bg-green-400 text-black-800 px-3 py-1 rounded-full border fill-green-400">Graphic Design</span>
+      <span class="bg-blue-500 text-black-800 px-3 py-1 rounded-full border fill-blue-700">Adobe Illustration</span>
+      <span class="bg-fuchsia-500 text-black-800 px-3 py-1 rounded-full border fill-fuchsia-500">Adobe Photoshop</span>
+      <span class="bg-yellow-300 text-black-800 px-3 py-1 rounded-full border fill-yellow-300">Logo Design</span>
     </div>
 
     <p class="mt-6 text-gray-700">

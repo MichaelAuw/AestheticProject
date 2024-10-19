@@ -187,6 +187,27 @@ public function showCategory($category)
     return view('artists.sections.collection-detail', compact('artworks', 'category'));
 }
 
+// FavoritesController Profile section
+public function follows() {
+    return view('profile.favorites.follows');
+}
 
+public function likes() {
+    return view('profile.favorites.like');
+}
+
+public function cart() {
+    return view('profile.favorites.cart');
+}
+
+public function show()
+    {
+        return view('layouts.order-summary');
+    }
+
+    public function orderHistory()
+    {
+        return view('profile.order-history');
+    }
 
 }
